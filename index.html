@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>한전위험성평가</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- 소개 -->
+    <meta name="description" content="title" />
+    <!-- 검색엔진 -->
+    <meta name="keywords" content="title" />
+    <!-- 제작자 -->
+    <meta name="author" content="title" />
+    <!-- 전화, 주소, 이메일 자동링크 없앨때 -->
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="favicon/favicon.png" /> -->
+
+    <!-- Custom :: CSS -->
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script type="text/javascript">
+        alert(
+          "현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!"
+        );
+      </script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="top_layout">
+        <!-- 공통: 사이드 메뉴 -->
+        <aside class="nav">
+            <div class="cont">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+                <ul class="one-depth">
+                    <li>
+                        <a href="#">
+                            <div class="m-list fl-row">
+                                <div class="ttt fl-row">
+                                    <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.7632 2.27442L15.9972 3.85953V1.00186C15.9972 0.449302 15.5446 0 14.9881 0H1.00914C0.452565 0 0 0.449302 0 1.00186V10.9981C0 11.5507 0.452565 12 1.00914 12H14.9909C15.5474 12 16 11.5507 16 10.9981V8.14326L18.766 9.72837C19.3141 10.0437 20 9.65023 20 9.02233V2.98047C20 2.35256 19.3141 1.95907 18.766 2.27442H18.7632Z"
+                                            fill="#676D84" />
+                                    </svg>
+                                    <span>실시간 영상</span>
+                                </div>
+                                <img src="images/icon/select_arrow.png" alt="">
+                            </div>
+                        </a>
+                        <ul class="two-depth">
+                            <li><a href="#">실시간 영상 확인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="m-list fl-row">
+                                <div class="ttt fl-row">
+                                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9387 0H1.06132C0.477594 0 0 0.51406 0 1.14235V11.8576C0 12.4859 0.477594 13 1.06132 13H16.9387C17.5224 13 18 12.4859 18 11.8576V1.14235C18 0.51406 17.5224 0 16.9387 0ZM11.4092 6.80844L7.99175 8.93322C7.76887 9.0703 7.49292 8.89895 7.49292 8.62478V4.37522C7.49292 4.10105 7.76887 3.91828 7.99175 4.06678L11.4092 6.19156C11.6321 6.32865 11.6321 6.68278 11.4092 6.81986V6.80844Z"
+                                            fill="#676D84" />
+                                    </svg>
+                                    <span>영상 조회</span>
+                                </div>
+                                <img src="images/icon/select_arrow.png" alt="">
+                            </div>
+                        </a>
+                        <ul class="two-depth">
+                            <li><a href="#">지난 1주일</a></li>
+                            <li><a href="#">지난 1개월</a></li>
+                            <li><a href="#">지난 1년</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="m-list fl-row">
+                                <div class="ttt fl-row">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.1758 0H16.8658C17.4922 0 18 0.527412 18 1.17801V16.822C18 17.4725 17.4922 18 16.8658 18H15.1758C14.5494 18 14.0416 17.4725 14.0416 16.822V1.17801C14.0416 0.527412 14.5494 0 15.1758 0Z"
+                                            fill="#676D84" />
+                                        <path
+                                            d="M9.84498 4.54711H8.155C7.52859 4.54711 7.02079 5.07452 7.02079 5.72512V16.822C7.02079 17.4726 7.52859 18 8.155 18H9.84498C10.4714 18 10.9792 17.4726 10.9792 16.822V5.72512C10.9792 5.07452 10.4714 4.54711 9.84498 4.54711Z"
+                                            fill="#676D84" />
+                                        <path
+                                            d="M2.82419 8.99997H1.13421C0.507805 8.99997 0 9.52739 0 10.178V16.8219C0 17.4725 0.507805 18 1.13421 18H2.82419C3.4506 18 3.9584 17.4725 3.9584 16.8219V10.178C3.9584 9.52739 3.4506 8.99997 2.82419 8.99997Z"
+                                            fill="#676D84" />
+                                    </svg>
+
+                                    <span>감지 내역</span>
+                                </div>
+                                <img src="images/icon/select_arrow.png" alt="">
+                            </div>
+                        </a>
+                        <ul class="two-depth">
+                            <li><a href="#">출입감지</a></li>
+                            <li><a href="#">위험감지</a></li>
+                            <li><a href="#">주의감지</a></li>
+                            <li><a href="#">화재감지</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="m-list fl-row">
+                                <div class="ttt fl-row">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.1688 4.05C13.1688 6.27188 11.3062 8.08594 8.99265 8.08594V8.07187C6.6936 8.07187 4.81653 6.25781 4.81653 4.03594C4.81653 1.81406 6.67905 0 8.99265 0C11.3062 0 13.1688 1.82812 13.1688 4.05Z"
+                                            fill="#676D84" />
+                                        <path
+                                            d="M8.99248 9.49219C12.7175 9.49219 15.3076 11.0953 15.3076 11.0953H15.3221C17.6357 12.4594 17.9995 12.9094 17.9995 14.6672V14.8078C17.9995 16.5656 16.7918 18 15.3221 18H2.67737C1.20773 18 0 16.5656 0 14.8078V14.6672C0 12.9234 0.436528 12.5016 2.67737 11.0953C2.67737 11.0953 5.26744 9.49219 8.99248 9.49219Z"
+                                            fill="#676D84" />
+                                    </svg>
+
+                                    <span>사용자 메뉴</span>
+                                </div>
+                                <img src="images/icon/select_arrow.png" alt="">
+                            </div>
+                        </a>
+                        <ul class="two-depth">
+                            <li><a href="#">사용자 정보</a></li>
+                            <li><a href="#">건물 정보</a></li>
+                            <li><a href="#">카메라 위치 설정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="m-list fl-row">
+                                <div class="ttt fl-row">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.06045 9.00002C6.06045 7.37273 7.37279 6.06039 9.00009 6.06039C10.6274 6.06039 11.9397 7.37273 11.9397 9.00002C11.9397 10.6273 10.6274 11.9397 9.00009 11.9397C7.37279 11.9397 6.06045 10.6273 6.06045 9.00002Z"
+                                            fill="#676D84" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.7717 6.19685L17.5984 8.02362C18.1339 8.55905 18.1339 9.44094 17.5984 9.97638L15.7717 11.8031V14.3963C15.7717 15.1522 15.1522 15.7717 14.3963 15.7717H11.8031L9.97638 17.5984C9.44094 18.1339 8.55905 18.1339 8.02362 17.5984L6.19685 15.7717H3.60367C2.84777 15.7717 2.22835 15.1522 2.22835 14.3963V11.8031L0.401575 9.97638C-0.133858 9.44094 -0.133858 8.55905 0.401575 8.02362L2.22835 6.19685V3.60367C2.22835 2.84777 2.84777 2.22835 3.60367 2.22835H6.19685L8.02362 0.401575C8.55905 -0.133858 9.44094 -0.133858 9.97638 0.401575L11.8031 2.22835H14.3963C15.1522 2.22835 15.7717 2.84777 15.7717 3.60367V6.19685ZM4.83202 9C4.83202 11.2992 6.69029 13.1575 8.9895 13.1575C11.2887 13.1575 13.147 11.2992 13.147 9C13.147 6.70079 11.2887 4.84252 8.9895 4.84252C6.69029 4.84252 4.83202 6.70079 4.83202 9Z"
+                                            fill="#676D84" />
+                                    </svg>
+
+                                    <span>설정</span>
+                                </div>
+                                <img src="images/icon/select_arrow.png" alt="">
+                            </div>
+                        </a>
+                        <ul class="two-depth">
+                            <li><a href="#">설정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- 공통: top-bar -->
+        <section class="main-area">
+            <div class="cont fl-row">
+
+            </div>
+        </section>
+        <!-- 공통: content 영역 -->
+        <main class="content fl_col">
+
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>
