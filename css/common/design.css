@@ -2,38 +2,111 @@
 /* *******************************************************
  * 파일이름 : design.css
  * 설명 : root / common
- * 최종업데이트 : 2024-02-01
+ * 최종업데이트 : 2024-02-29
 ******************************************************** */
 
 /* *******************
  * 설명 : root
- * date : 2024-01-04
+ * date : 2024-2-29
 ******************* */
 
 :root {
-  /* Height */
-  --headerHeight: 112px;
-  --fullHeight: 100vh;
-  /* Radius */
-  --borderRadius: 10px;
-  /* ******* ColorScheme ******* */
-  --mainColor: #3d5695;
-  --secondaryColor: #455eee;
-  --backgroundColor: #f5f6f8;
-  --errorColor: #ef6b70;
-  --borderColor: #d5d7df;
-  --tableHeader: #ebeef5;
-  /* Font */
-  --fontColor: #333333;
-  --secondaryFontColor: #666666;
+  /* ******************  디자인 :: Color ********************** */
+
+  /* basic-color */
+  --rt-white: #fff;
+  --rt-black: #000;
+  --rt-gray: #878a99;
+  --rt-gray-dark: #343a40;
+  --rt-gray-100: #f3f6f9;
+  --rt-gray-200: #eff2f7;
+  --rt-gray-300: #e9ebec;
+  --rt-gray-400: #ced4da;
+  --rt-gray-500: #adb5bd;
+  --rt-gray-600: #878a99;
+  --rt-gray-700: #495057;
+  --rt-gray-800: #363d48;
+  --rt-gray-900: #212529;
+
+  /* point-color */
+  --rt-red: #f06548;
+  --rt-orange: #f1963b;
+  --rt-yellow: #f7b84b;
+  --rt-green: #0ab39c;
+  --rt-blue: #3577f1;
+  --rt-cyan: #299cdb;
+  --rt-indigo: #405189;
+  --rt-purple: #6559cc;
+  --rt-pink: #f672a7;
+  --rt-teal: #02a8b5;
+
+  /* colorScheme */
+  --rt-primary: #405189;
+  --rt-secondary: #3577f1;
+  --rt-success: #0ab39c;
+  --rt-info: #299cdb;
+  --rt-error: #f06548;
+  --rt-warning: #f7b84b;
+  --rt-background: #f3f3f9;
+  --rt-border: #e9ebec;
+
+  /* text-Color */
+  --rt-primary-text: #333333;
+  --rt-secondary-text: #666666;
+  --rt-success-text: #099885;
+  --rt-info-text: #2385ba;
+  --rt-error-text: #f06548;
+  --rt-warning-text: #d29c40;
+  --rt-side-nav-title-text: #838fb9;
+  --rt-side-nav-item-text:#abb9e8;
+
+  /* ******************  디자인 :: Shape ********************** */
+  /* font-size */
+  --rt-font-size: 1.4rem;
+  --rt-font-size-10: 1rem;
+  --rt-font-size-12: 1.2rem;
+  --rt-font-size-16: 1.6rem;
+  --rt-font-size-18: 1.8rem;
+  --rt-font-size-20: 2rem;
+
+  /* font-weight */
+    --rt-font-weight-300: 300;
+    --rt-font-weight-400: 400;
+    --rt-font-weight-500: 500;
+    --rt-font-weight-600: 600;
+    --rt-font-weight-bold: 700
+
+  /* line-height */
+  --rt-body-line-height: 1.5;
+  --rt-body-line-height-sm: 1.2;
+  --rt-body-line-height-lg: 1.4;
+  --rt-body-line-height-xl: 1.6;
+  --rt-body-line-height-xxl: 2;
+
+  /* table */
+  --rt-table-header: #ebeef5;
+  --rt-table-row-ht: 30px;
+  --rt-table-padding: 0 12px;
+
+  /* border-radius */
+  --rt-border-radius: 0.25rem;
+  --rt-border-radius-sm: 0.2rem;
+  --rt-border-radius-lg: 0.3rem;
+  --rt-border-radius-xl: 1rem;
+  --rt-border-radius-xxl: 2rem;
+
+  /* box-shadow */
+  --rt-box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+  --rt-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --rt-box-shadow-lg: 0 5px 10px rgba(30, 32, 37, 0.12);
 }
 
 /* *******************
- * 설명 : common
- * date : 2024-01-16
+ * 설명 : common 공통
+ * date : 2024-02-29
 ******************* */
 
-/* ****************** 공통 :: 애니메이션 동작 감소 ********************** */
+/* ****************** 공통 :: 애니메이션 동작 감소 ****************** */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: smooth;
@@ -73,7 +146,7 @@
   text-indent: -9999px;
 }
 
-/* ****************** 공통 :: css ********************** */
+/* ****************** 공통 :: width / height ********************** */
 .wd-100 {
   width: 100%;
 }
@@ -84,57 +157,165 @@
   width: 100%;
   height: 100%;
 }
+
+/* ****************** 공통 :: position ********************** */
 .relative {
   position: relative;
 }
-.relative-100 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .absolute {
   position: absolute;
 }
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
 
-/* ****************** 공통 :: padding-top / paddidng-bottom ********************** */
-.pd-top-5 {
+/* ****************** 공통 :: padding ********************** */
+.pd-5 {
+  padding: 5px;
+}
+.pd-10 {
+  padding: 10px;
+}
+.pd-15 {
+  padding: 15px;
+}
+.pd-20 {
+  padding: 20px;
+}
+/* top */
+.pd-tp-5 {
   padding-top: 5px;
 }
-.pd-top-10 {
+.pd-tp-10 {
   padding-top: 10px;
 }
-.pd-top-15 {
+.pd-tp-15 {
   padding-top: 15px;
 }
-.pd-top-20 {
+.pd-tp-20 {
   padding-top: 20px;
 }
-.pd-bottom-5 {
-  padding-top: 5px;
+/* bottom */
+.pd-bt-5 {
+  padding-bottom: 5px;
 }
-.pd-bottom-10 {
-  padding-top: 10px;
+.pd-bt-10 {
+  padding-bottom: 10px;
 }
-.pd-bottom-15 {
-  padding-top: 15px;
+.pd-bt-15 {
+  padding-bottom: 15px;
 }
-.pd-bottom-20 {
-  padding-top: 20px;
+.pd-bt-20 {
+  padding-bottom: 20px;
+}
+/* left */
+.pd-lf-5 {
+  padding-left: 5px;
+}
+.pd-lf-10 {
+  padding-left: 10px;
+}
+.pd-lf-15 {
+  padding-left: 15px;
+}
+.pd-lf-20 {
+  padding-left: 20px;
+}
+/* right */
+.pd-rf-5 {
+  padding-right: 5px;
+}
+.pd-rf-10 {
+  padding-right: 10px;
+}
+.pd-rf-15 {
+  padding-right: 15px;
+}
+.pd-rf-20 {
+  padding-right: 20px;
+}
+
+/* ****************** 공통 :: margin ********************** */
+.mg-5 {
+  margin: 5px;
+}
+.mg-10 {
+  margin: 10px;
+}
+.mg-15 {
+  margin: 15px;
+}
+.mg-20 {
+  margin: 20px;
+}
+/* top */
+.mg-tp-5 {
+  margin-top: 5px;
+}
+.mg-tp-10 {
+  margin-top: 10px;
+}
+.mg-tp-15 {
+  margin-top: 15px;
+}
+.mg-tp-20 {
+  margin-top: 20px;
+}
+/* bottom */
+.mg-bt-5 {
+  margin-bottom: 5px;
+}
+.mg-bt-10 {
+  margin-bottom: 10px;
+}
+.mg-bt-15 {
+  margin-bottom: 15px;
+}
+.mg-bt-20 {
+  margin-bottom: 20px;
+}
+/* left */
+.mg-lf-5 {
+  margin-left: 5px;
+}
+.mg-lf-10 {
+  margin-left: 10px;
+}
+.mg-lf-15 {
+  margin-left: 15px;
+}
+.mg-lf-20 {
+  margin-left: 20px;
+}
+/* right */
+.mg-rf-5 {
+  margin-right: 5px;
+}
+.mg-rf-10 {
+  margin-right: 10px;
+}
+.mg-rf-15 {
+  margin-right: 15px;
+}
+.mg-rf-20 {
+  margin-right: 20px;
 }
 
 /* ****************** 공통 :: Table ********************** */
 table {
   width: 100%;
-  border-left: 1px solid var(--borderColor);
-  border: 1px solid var(--borderColor);
+  border-left: 1px solid var(--rt-border);
+  border: 1px solid var(--rt-border);
   text-align: center;
   word-break: keep-all;
 }
 table th {
-  border-right: 1px solid var(--borderColor);
-  border-bottom: 1px solid var(--borderColor);
-  background: var(--tableHeader);
+  border-right: 1px solid var(--rt-border);
+  border-bottom: 1px solid var(--rt-border);
+  background: var(--rt-table-header);
   vertical-align: middle;
   font-weight: 600;
   height: 30px;
@@ -147,12 +328,10 @@ table tr td:last-child {
 table tr:last-child td {
   border-bottom: 0;
 }
-table tr.on td {
-  background: #e8f7ff;
-}
+
 table td {
-  border-right: 1px solid var(--borderColor);
-  border-bottom: 1px solid var(--borderColor);
+  border-right: 1px solid var(--rt-border);
+  border-bottom: 1px solid var(--rt-border);
   vertical-align: middle;
   word-break: keep-all;
   padding: 12px;
@@ -166,9 +345,9 @@ table td {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: var(--rt-black);
   opacity: 0.5;
-  z-index: 999;
+  z-index: 1000;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   display: none;
@@ -181,14 +360,24 @@ table td {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
-  background: #fff;
+  z-index: 1002;
+  background: var(--rt-background);
 }
 
 /* ****************** 공통 :: Image ********************** */
 .img-box > img {
   display: block;
   width: 100%;
+}
+.img-wdht-100 {
+  width: 100%;
+  height: 100%;
+}
+.img-wd-100 {
+  width: 100%;
+}
+.img-ht-100 {
+  height: 100%;
 }
 
 /* ****************** 공통 :: Flex ********************** */
@@ -245,6 +434,9 @@ table td {
 .fl-item-gap-25 {
   gap: 25px;
 }
+.fl-item-gap-30 {
+  gap: 30px;
+}
 
 /* ****************** 공통 :: Clearfix ********************** */
 .clearfix::after {
@@ -262,13 +454,34 @@ table td {
   float: right;
   box-sizing: border-box;
 }
-/* ****************** 공통 :: eclipsis ********************** */
-.one-ellipsis {
+
+/* ****************** 공통 :: text ********************** */
+
+/* text-align */
+.txt-align-left {
+  text-align: left;
+}
+.txt-align-center {
+  text-align: center;
+}
+.txt-align-right {
+  text-align: right;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+.word-keep-all {
+  word-break: keep-all;
+}
+
+/* ellipsis */
+.one-ellip {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.two-ellipsis {
+.two-ellip {
   display: block;
   max-width: 100%;
   height: 68px;
@@ -324,7 +537,7 @@ textarea {
 /* 막대 */
 .scr-bar::-webkit-scrollbar-thumb {
   height: 30px;
-  background: var(--mainColor);
+  background: var(--rt-primary);
   border-radius: 10px;
   /* background-clip: padding-box; */
   border: 2px solid transparent;
@@ -332,7 +545,6 @@ textarea {
 /* 배경 */
 .scr-bar::-webkit-scrollbar-track {
   background-color: #d5d7df;
-  border-radius: 3px;
 }
 
 /* ****************** 공통 :: Skip Navigation ********************** */

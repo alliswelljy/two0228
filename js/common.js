@@ -1,26 +1,33 @@
-/* *********************
- * 설명: 사이드메뉴
- *********************** */
-$(document).ready(function () {
-  $(".one-depth > li").click(function (e) {
-    e.preventDefault();
-    if ($(this).hasClass("on")) {
-      return;
-    } else {
-      $(".one-depth > li").each(function () {
-        $(this).children("ul").stop().slideUp(300);
-        $(this).removeClass("on");
-      });
-      //클릭한 요소 on추가
-      $(this).children("ul").stop().slideDown(300);
-      $(this).addClass("on");
-    }
-  });
+"use strict";
 
-  $(".two-depth > li").click(function () {
-    $(".two-depth > li > a").css("color", "rgba(255, 255, 255, 0.3)");
-    $(this).children("a").css("color", "rgba(255, 255, 255, 1)");
-  });
+/* *******************************************************
+ * 파일이름 : common.js
+ * 설명 : custom js
+ * 최종업데이트 : 2024-02-29
+ ******************************************************** */
+
+var common = (function () {
+  return {
+    init: function () {
+      // common.header();
+      // common.container();
+      // common.footer();
+    },
+
+    // header: function () {
+    //   console.log("header js코드");
+    // },
+    // container: function () {
+    //   console.log("container js코드");
+    // },
+    // footer: function () {
+    //   console.log("footer js코드");
+    // },
+  };
+})();
+
+window.addEventListener("load", function () {
+  common.init();
+  var myElement = document.getElementById("simpleBar");
+  new SimpleBar(myElement, { autoHide: true });
 });
-
-window.addEventListener("load", function () {});
