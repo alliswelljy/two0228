@@ -41,8 +41,9 @@
   --rt-teal: #02a8b5;
 
   /* colorScheme */
-  --rt-primary: #405189;
-  --rt-secondary: #3577f1;
+  /* --rt-primary: #ff6000; */
+  --rt-primary: #555;
+  --rt-secondary: #428bca;
   --rt-success: #0ab39c;
   --rt-info: #299cdb;
   --rt-error: #f06548;
@@ -52,13 +53,13 @@
 
   /* text-Color */
   --rt-primary-text: #333333;
-  --rt-secondary-text: #666666;
+  --rt-secondary-text: #818181;
   --rt-success-text: #099885;
   --rt-info-text: #2385ba;
   --rt-error-text: #f06548;
   --rt-warning-text: #d29c40;
-  --rt-side-nav-title-text: #838fb9;
-  --rt-side-nav-item-text:#abb9e8;
+  /* --rt-side-nav-title-text: #838fb9; */
+  --rt-side-nav-item-text: #ffffff;
 
   /* ******************  디자인 :: Shape ********************** */
   /* font-size */
@@ -70,11 +71,11 @@
   --rt-font-size-20: 2rem;
 
   /* font-weight */
-    --rt-font-weight-300: 300;
-    --rt-font-weight-400: 400;
-    --rt-font-weight-500: 500;
-    --rt-font-weight-600: 600;
-    --rt-font-weight-bold: 700
+  --rt-font-weight-300: 300;
+  --rt-font-weight-400: 400;
+  --rt-font-weight-500: 500;
+  --rt-font-weight-600: 600;
+  --rt-font-weight-bold: 700;
 
   /* line-height */
   --rt-body-line-height: 1.5;
@@ -84,7 +85,7 @@
   --rt-body-line-height-xxl: 2;
 
   /* table */
-  --rt-table-header: #ebeef5;
+  --rt-table-header: #f3f6f9;
   --rt-table-row-ht: 30px;
   --rt-table-padding: 0 12px;
 

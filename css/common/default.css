@@ -1,3 +1,11 @@
+@charset "utf-8";
+
+/* *******************************************************
+ * 파일이름 : default.css
+ * 설명 : reset 초기화 작업
+ * 업데이트 : 2024-03-05
+ ******************************************************** */
+
 html {
   overflow-y: scroll;
 }
@@ -159,10 +167,12 @@ input,
 textarea,
 button,
 select {
-  font-family: "SUIT", "Malgun Gothic", "돋움", Helvetica, Sans-serif;
+  font-family: "Pretendard200", "SUIT", "Malgun Gothic", "돋움", Helvetica,
+    Sans-serif;
   font-size: 1.4rem;
+  font-weight: 300;
   line-height: 1;
-  letter-spacing: -0.48px;
+  letter-spacing: 1px;
   color: #333333;
 }
 button,

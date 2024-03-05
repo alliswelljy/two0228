@@ -29,6 +29,7 @@
 
   <!-- Jquery -->
   <script src="js/vendor/jquery.min.js"></script>
+  <!-- simplebar -->
   <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
 
   <!-- HTLM5shiv ie6~8 -->
@@ -59,27 +60,63 @@
         </a>
       </div>
       <div id="simpleBar" class="dropdown-wrap">
-        <ul class="nav-one-depth-ul wdht-100">
-
-          <li class="nav-title">
-            <span data-key="t-menu">Menu</span>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <div class="left-tit">
-                <img src="images/icon/date.png" alt="" height="20">
+        <ul class="accordion dropdown-ul">
+          <li class="accordion-item">
+            <a href="#" class="accordion-header fl-row fl-justify-between fl-align-center">
+              <div class="left-tit fl-row fl-justify-between fl-align-center fl-item-gap-10">
+                <div class="icon img-box">
+                  <img src="images/svg/menu_1.svg" alt="home">
+                </div>
                 <span>1차메뉴</span>
               </div>
               <i class="fa-solid fa-angle-down"></i>
             </a>
-            <div class="dropdown-menu show">
+            <div class="accordion-content">
+              <ul class="sub-accordion dropdown-ul">
+                <li class="sub-accordion-item">
+                  <a href="#" class="sub-accordion-header">2차메뉴</a>
+                  <div class="sub-accordion-content">
+                    <ul class="last-accordion dropdown-ul">
+                      <li class="last-accordion-item"><a href="#" class="last-accordion-header">3차메뉴</a></li>
+                      <li class="last-accordion-item"><a href="#" class="last-accordion-header">3차메뉴</a></li>
+                      <li class="last-accordion-item"><a href="#" class="last-accordion-header">3차메뉴</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="sub-accordion-item">
+                  <a href="#" class="sub-accordion-header">2차메뉴</a>
+                  <div class="sub-accordion-content">
+                    <ul class="last-accordion dropdown-ul">
+                      <li class="last-accordion-item"><a href="#" class="last-accordion-header">3차메뉴</a></li>
+                      <li class="last-accordion-item"><a href="#" class="last-accordion-header">3차메뉴</a></li>
+                      <li class="last-accordion-item"><a href="#" class="last-accordion-header">3차메뉴</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+        <!-- <ul class="nav-one-depth-ul wdht-100">
+          <li class="one-depth-item nav-item">
+            <a class="nav-link" href="#">
+              <div class="left-tit">
+                <div class="icon img-box">
+                  <img src="images/svg/menu_1.svg" alt="home">
+                </div>
+                <span>1차메뉴</span>
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu">
               <ul class="nav-two-depth-ul drop-ul">
                 <li class="nav-item">
                   <a class="nav-link" href="#">
                     <span>2차메뉴</span>
                     <i class="fa-solid fa-angle-right"></i>
                   </a>
-                  <div class="dropdown-menu show">
+                  <div class="dropdown-menu">
                     <ul class="nav-three-depth-ul">
                       <li class="nav-item">
                         <a class="nav-link" href="#">
@@ -114,7 +151,59 @@
               </ul>
             </div>
           </li>
-        </ul>
+          <li class="one-depth-item nav-item">
+            <a class="nav-link" href="#">
+              <div class="left-tit">
+                <div class="icon img-box">
+                  <img src="images/svg/menu_2.svg" alt="mail">
+                </div>
+                <span>1차메뉴</span>
+              </div>
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu">
+              <ul class="nav-two-depth-ul drop-ul">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>2차메뉴</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <ul class="nav-three-depth-ul">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>3차메뉴</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>3차메뉴</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <span>3차메뉴</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>2차메뉴</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>2차메뉴</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul> -->
       </div>
 
     </aside>
