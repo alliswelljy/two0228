@@ -94,7 +94,23 @@
 
 /* 공통 */
 .dropdown-ul li a {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.568);
+  transition: color 0.2s ease-in;
+}
+
+.dropdown-ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.accordion li .left-tit .icon img {
+  filter: opacity(0.5);
+}
+.accordion li.open .left-tit .icon img {
+  filter: opacity(1);
+}
+
+.dropdown-ul li a i {
+  font-size: 12px;
+  transition: transform 0.2s;
 }
 
 /* one-depth */
@@ -111,16 +127,26 @@
   width: 20px;
   height: 20px;
 }
+
+.accordion > li.open > a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.accordion-item.open .accordion-header i {
+  transform: rotate(90deg);
+}
+
 .accordion-content {
   opacity: 0;
   height: 0;
   visibility: hidden;
   overflow: hidden;
+  transition: all 0.35s ease;
 }
 .accordion-item.open .accordion-content {
   opacity: 1;
   visibility: visible;
-  animation: sunAnimation 0.55s forwards ease;
+  animation: sunAnimation 0.55s 0.3s forwards ease-in;
 }
 
 @keyframes sunAnimation {
@@ -135,15 +161,23 @@
     height: 100%;
   }
 }
+
 /* two-depth */
 .sub-accordion {
   margin-left: 45px;
 }
 
+.sub-accordion-item.open .sub-accordion-header i {
+  transform: rotate(90deg);
+}
+
+.sub-accordion > li.open > a {
+  color: rgba(255, 255, 255, 1);
+}
+
 .sub-accordion-header {
   position: relative;
-  display: block;
-  padding: 10px 0;
+  padding: 10px 15px 10px 0;
   cursor: pointer;
 }
 
@@ -169,10 +203,15 @@
   opacity: 1;
   visibility: visible;
   max-height: auto;
+  padding-bottom: 15px;
 }
 /* last-depth */
 .last-accordion {
   margin-left: 20px;
+}
+
+.last-accordion > li.open > a {
+  color: rgba(255, 255, 255, 1);
 }
 
 .last-accordion-header {
